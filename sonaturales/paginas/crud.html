@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página Principal</title>
+
+<!--Bootstrap CSS-->
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+<!--Opción 1: Bootstrap Bundle with Popper-->
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+<style type="text/css">
+.fondo{
+    background-image: url(img/rayadoc.png);
+}
+</style>
+</head>
+<body class="fondo">
+<!--Barra de menú-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navar-brand" href="#">SONaturales</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navarText" aria-controls="n">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav m-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="videos.html" target="myiframe">Videos</a>
+            </li>
+            <li class="nav-item activate">
+                <a class="nav-link" href="sorbetes.php" target="myiframe">Lista de sorbetes</a>
+            </li>
+            <li class="nav-item activate">
+                <a class="nav-link" href="paletas.php" target="myiframe">Lista de paletas</a>
+            </li>
+            <li class="nav-item activate">
+                <a class="nav-link" href="nonaturales.php" target="myiframe">Productos NO naturales</a>
+            </li>
+            <li class="nav-item activate">
+                <a class="nav-link" href="alta_recomendacion.php" target="myiframe">Recomendar nuevo sorbete</a>
+            </li>
+        </ul>
+     </div>
+    </div>
+  </nav>
+
+  <section>
+      <center><iframe name="myiframe" src="videos.html" width=80% height="700px"> Texto para cuando el navegador no conosca
+      </iframe> </center>
+  </section>
+  <br><br>
+  <table align="center">
+      <tr>
+          <td>
+              <a href="../index.html">
+              <input type="button" name="Registrar" value="Cerrar la sesión">
+            </a>
+          </td>
+      </tr>
+  </table>
+</body>
+</html>
